@@ -58,15 +58,10 @@ df.info()
 # Change column names
 print(df.columns.values)
 
-column_names = ['Month of absence', 'Day of the week', 'Seasons',
-       'Transportation expense', 'Distance from Residence to Work',
-       'Service time', 'Age', 'Work load Average/day ', 'Hit target',
-       'Disciplinary failure', 'Education', 'Son', 'Social drinker',
-       'Social smoker', 'Pet', 'Weight', 'Height', 'Body mass index',
-       'Absenteeism time in hours', 'Reason_disease',
-       'Reason_pregnancy', 'Reason_external', 'Reason_visit']
-
-df.columns = column_names
+df.rename(columns={'0': 'Reason_disease'}, inplace=True)
+df.rename(columns={'1': 'Reason_pregnancy'}, inplace=True)
+df.rename(columns={'2': 'Reason_external'}, inplace=True)
+df.rename(columns={'3': 'Reason_visit'}, inplace=True)
 df.info()
 
 # Education
