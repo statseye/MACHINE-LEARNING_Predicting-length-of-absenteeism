@@ -1,6 +1,6 @@
 # Predicting length of absenteeism
 
-Folder <source code> includes code in Python for predicting length of absenteeism at work using four ML techniques:
+Folder *source code* includes code in Python for predicting length of absenteeism at work using four ML techniques:
 - poisson regression, 
 - negative binomial regression,
 - random forest, and 
